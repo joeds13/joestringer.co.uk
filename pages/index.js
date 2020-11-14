@@ -3,10 +3,12 @@ import Link from "next/link";
 import { Client } from "../prismic-configuration";
 import { RichText } from "prismic-reactjs";
 
+import BackgroundImage from "../components/BackgroundImage";
+
 function Index(home) {
   return (
     <Layout>
-      <div class="backgroundImage"></div>
+      <BackgroundImage />
       <span>{RichText.asText(home.data.content)}</span>
       <ul>
         <li>

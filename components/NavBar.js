@@ -1,12 +1,12 @@
-const NavBar = () => (
-  <div className="NavBar">
-    <style jsx>{`
-      background-color: LightSlateGray;
-      color: white;
-      width: 100%;
-      height: 60px;
-    `}</style>
-  </div>
-);
+import styled from "styled-components";
+
+const NavBarStyle = styled.div`
+  background-color: ${(props) => props.theme.colours.nav};
+  color: white;
+  width: 100%;
+  height: 60px;
+`;
+
+const NavBar = () => <NavBarStyle />;
 
 export default NavBar;
