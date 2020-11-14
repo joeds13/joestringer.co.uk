@@ -1,0 +1,7 @@
+.pnp.js
+.yarn*
+package*json
+
+.yarn/
+.next/
+out/
